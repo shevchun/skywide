@@ -1,0 +1,29 @@
+body {
+  height: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  @include response(1200px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// {
+//   max-height: 40px;
+//   overflow: hidden;
+//   -webkit-line-clamp: 2;
+//   display: box;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+// }
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}

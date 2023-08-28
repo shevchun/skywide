@@ -1,0 +1,23 @@
+//normalize
+@import "normalize";
+
+//reset, uncomment if you need
+@import "reset";
+
+//variable
+@import "variable";
+
+//fonts
+@import "fonts";
+
+//mixins
+@import "mixins";
+
+//imports common styles
+@import "common";
+
+//project libs styles
+@import "app/*/*.scss";
+
+//project styles
+@import "app/*.scss";

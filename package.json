@@ -1,0 +1,71 @@
+{
+  "name": "front-end-developer-kit",
+  "version": "2.0",
+  "description": "Front-End developer kit(es2015,sass,optimization)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es2015",
+    "sass",
+    "scss",
+    "markup",
+    "front-end"
+  ],
+  "author": "shevchun",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-syntax-import-assertions": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-preset-env": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "eslint": "latest",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "fs": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cached": "latest",
+    "gulp-changed": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-filter": "latest",
+    "gulp-if": "latest",
+    "gulp-multi-dest": "latest",
+    "gulp-nunjucks": "latest",
+    "gulp-nunjucks-render": "latest",
+    "gulp-plumber": "latest",
+    "gulp-postcss": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-strip-css-comments": "latest",
+    "gulp-util": "latest",
+    "prettier": "latest",
+    "require-dir": "latest",
+    "sass": "latest",
+    "stylelint": "latest",
+    "webpack": "latest"
+  },
+  "dependencies": {
+    "element-closest": "latest",
+    "element.prototype.matches": "latest",
+    "jquery": "latest",
+    "nodelist-foreach-polyfill": "latest",
+    "svg4everybody": "latest"
+  }
+}

@@ -1,0 +1,19 @@
+@mixin response($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin response-min($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin desktop-hover() {
+  @media only screen and (min-width: 1025px) {
+    &:hover {
+      @content;
+    }
+  }
+}
