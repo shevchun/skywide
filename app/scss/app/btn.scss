@@ -1,0 +1,26 @@
+.btn {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: #313131;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 64px;
+  border: 1px solid $yellow;
+  padding: 12px 23px;
+  transition: 0.3s ease-in-out;
+  @include desktop-hover() {
+    background: $yellow;
+  }
+  &--yellow {
+    background: $yellow;
+    @include desktop-hover() {
+      background: #313131;
+      border-color: #313131;
+      color: $yellow;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #f1e7d1;
+  background: #fff;
+  padding: 20px;
+  .home & {
+    border-color: transparent;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .3s ease-in-out;
+    @include desktop-hover() {
+      border-color: $yellow;
+    }
+    svg {
+      fill: #1d1d1d;
+    }
+  }
+  &__logo {
+    position: relative;
+    flex: 0 0 auto;
+  }
+  &__logo-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__right {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    position: relative;
+    flex: 0 0 auto;
+  }
+}
