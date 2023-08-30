@@ -87,7 +87,12 @@
   }
   &__tab-head {
     position: relative;
-    padding: 63px 86px;
+    padding: 40px 86px;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   &__tab-head-title {
     position: relative;
@@ -121,12 +126,33 @@
     position: relative;
   }
   &__tab-body {
+    position: relative;
+    padding: 40px 158px 29px 86px;
   }
   &__tab-body-item {
+    position: relative;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__tab-body-item-title {
+    margin: 0 0 12px;
+    position: relative;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
   }
   &__tab-body-item-text {
+    position: relative;
+    color: #626262;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    p {
+      margin: 0;
+    }
   }
 }
 .container {

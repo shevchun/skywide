@@ -25,4 +25,11 @@
       color: $yellow;
     }
   }
+  &--white {
+    color: #fff;
+    @include desktop-hover() {
+      background: $yellow;
+      color: #313131;
+    }
+  }
 }

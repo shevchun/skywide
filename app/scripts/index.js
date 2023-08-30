@@ -4,6 +4,7 @@ import svg4everybody from 'svg4everybody'
 
 import custom from './components/custom.js'
 import Tabs from './components/tabs.js'
+import sliders from './components/sliders.js'
 
 globalThis.$ = $
 globalThis.jQuery = $
@@ -11,6 +12,7 @@ globalThis.jQuery = $
 document.addEventListener('DOMContentLoaded', () => {
   globalThis.Tabs = new Tabs()
   svg4everybody()
+  sliders()
   custom()
 })
 

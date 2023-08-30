@@ -66,6 +66,7 @@
     "element.prototype.matches": "latest",
     "jquery": "latest",
     "nodelist-foreach-polyfill": "latest",
+    "slick-carousel": "^1.8.1",
     "svg4everybody": "latest"
   }
 }

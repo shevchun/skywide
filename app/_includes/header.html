@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header__container container">
     <div class="header__left">
-      <div class="header__menu">
+      <div class="header__menu-btn js-open-menu">
         <svg width="18" height="14" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
           <path d="M18 7C18 7.19891 17.921 7.38968 17.7803 7.53033C17.6397 7.67098 17.4489 7.75 17.25 7.75H0.75C0.551088 7.75 0.360322 7.67098 0.21967 7.53033C0.0790178 7.38968 0 7.19891 0 7C0 6.80109 0.0790178 6.61032 0.21967 6.46967C0.360322 6.32902 0.551088 6.25 0.75 6.25H17.25C17.4489 6.25 17.6397 6.32902 17.7803 6.46967C17.921 6.61032 18 6.80109 18 7ZM0.75 1.75H17.25C17.4489 1.75 17.6397 1.67098 17.7803 1.53033C17.921 1.38968 18 1.19891 18 1C18 0.801088 17.921 0.610322 17.7803 0.46967C17.6397 0.329018 17.4489 0.25 17.25 0.25H0.75C0.551088 0.25 0.360322 0.329018 0.21967 0.46967C0.0790178 0.610322 0 0.801088 0 1C0 1.19891 0.0790178 1.38968 0.21967 1.53033C0.360322 1.67098 0.551088 1.75 0.75 1.75ZM17.25 12.25H0.75C0.551088 12.25 0.360322 12.329 0.21967 12.4697C0.0790178 12.6103 0 12.8011 0 13C0 13.1989 0.0790178 13.3897 0.21967 13.5303C0.360322 13.671 0.551088 13.75 0.75 13.75H17.25C17.4489 13.75 17.6397 13.671 17.7803 13.5303C17.921 13.3897 18 13.1989 18 13C18 12.8011 17.921 12.6103 17.7803 12.4697C17.6397 12.329 17.4489 12.25 17.25 12.25Z" />
         </svg>
@@ -13,6 +13,198 @@
     </div>
     <div class="header__right">
       <a href="#" class="header__btn btn">Request A Quote</a>
+    </div>
+  </div>
+  <div class="header__menu">
+    <div class="header__menu-head">
+      <div class="header__container container">
+        <div class="header__left">
+          <div class="header__menu-btn header__menu-btn--white js-close-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.2806 18.2193C19.3502 18.289 19.4055 18.3717 19.4432 18.4628C19.4809 18.5538 19.5003 18.6514 19.5003 18.7499C19.5003 18.8485 19.4809 18.9461 19.4432 19.0371C19.4055 19.1281 19.3502 19.2109 19.2806 19.2806C19.2109 19.3502 19.1281 19.4055 19.0371 19.4432C18.9461 19.4809 18.8485 19.5003 18.7499 19.5003C18.6514 19.5003 18.5538 19.4809 18.4628 19.4432C18.3717 19.4055 18.289 19.3502 18.2193 19.2806L11.9999 13.0602L5.78055 19.2806C5.63982 19.4213 5.44895 19.5003 5.24993 19.5003C5.05091 19.5003 4.86003 19.4213 4.7193 19.2806C4.57857 19.1398 4.49951 18.949 4.49951 18.7499C4.49951 18.5509 4.57857 18.36 4.7193 18.2193L10.9396 11.9999L4.7193 5.78055C4.57857 5.63982 4.49951 5.44895 4.49951 5.24993C4.49951 5.05091 4.57857 4.86003 4.7193 4.7193C4.86003 4.57857 5.05091 4.49951 5.24993 4.49951C5.44895 4.49951 5.63982 4.57857 5.78055 4.7193L11.9999 10.9396L18.2193 4.7193C18.36 4.57857 18.5509 4.49951 18.7499 4.49951C18.949 4.49951 19.1398 4.57857 19.2806 4.7193C19.4213 4.86003 19.5003 5.05091 19.5003 5.24993C19.5003 5.44895 19.4213 5.63982 19.2806 5.78055L13.0602 11.9999L19.2806 18.2193Z" />
+            </svg>
+          </div>
+          <div class="header__logo">
+            <img src="data/logo-white.svg" width="127" height="44" alt="logo">
+            <a href="#" class="header__logo-link"></a>
+          </div>
+        </div>
+        <div class="header__right">
+          <a href="#" class="header__btn btn btn--white">Request A Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu-body container">
+      <div class="header__menu-box">
+        <ul class="header__menu-nav">
+          <li class="header__menu-nav-item">
+            <a href="#" class="header__menu-nav-link">Additional Services</a>
+            <ul class="header__menu-nav-sub-1 header__menu-nav-sub">
+              <li class="header__menu-nav-sub-1-item">
+                <a href="#" class="header__menu-nav-sub-1-link">
+                  <img src="data/Renovation.svg" width="40" height="40" alt="Renovation">
+                  Home Renovation
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-1-item">
+                <a href="#" class="header__menu-nav-sub-1-link">
+                  <img src="data/Commercial.svg" width="40" height="40" alt="Commercial">
+                  Commercial Renovation
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-1-item">
+                <a href="#" class="header__menu-nav-sub-1-link">
+                  <img src="data/Construction.svg" width="40" height="40" alt="Construction">
+                  Construction Management
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-1-item">
+                <a href="#" class="header__menu-nav-sub-1-link">
+                  <img src="data/Architectural.svg" width="40" height="40" alt="Architectural">
+                  Architectural Design
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-1-item">
+                <a href="#" class="header__menu-nav-sub-1-link">
+                  <img src="data/Interior.svg" width="40" height="40" alt="Interior">
+                  Interior Design
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__menu-nav-item">
+            <a href="#" class="header__menu-nav-link">Portfolio</a>
+            <div class="header__menu-nav-sub-2 header__menu-nav-sub">
+              <div class="header__menu-nav-sub-title">Learn how Skywide can turn your dreams into reality</div>
+              <ul class="header__menu-nav-sub-2-list">
+                <li class="header__menu-nav-sub-2-item">
+                  <a href="#" class="header__menu-nav-sub-2-link">
+                    <img src="data/Dorrance-nav.jpg" width="966" height="142" alt="Dorrance">
+                    <div class="header__menu-nav-sub-2-link-title">1157 Dorrance</div>
+                    <div class="header__menu-nav-sub-2-link-text">Construction Management</div>
+                  </a>
+                </li>
+                <li class="header__menu-nav-sub-2-item">
+                  <a href="#" class="header__menu-nav-sub-2-link">
+                    <img src="data/Sepviva-nav.jpg" width="966" height="142" alt="Sepviva">
+                    <div class="header__menu-nav-sub-2-link-title">2540 Sepviva st</div>
+                    <div class="header__menu-nav-sub-2-link-text">Construction Management</div>
+                  </a>
+                </li>
+                <li class="header__menu-nav-sub-2-item">
+                  <a href="#" class="header__menu-nav-sub-2-link">
+                    <img src="data/2134N.jpg" width="966" height="142" alt="2134N">
+                    <div class="header__menu-nav-sub-2-link-title">2134N 19th st</div>
+                    <div class="header__menu-nav-sub-2-link-text">Construction Management</div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="header__menu-nav-all-btn">
+                View all projects
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7504 1V10.75C13.7504 10.9489 13.6714 11.1397 13.5307 11.2803C13.3901 11.421 13.1993 11.5 13.0004 11.5C12.8015 11.5 12.6107 11.421 12.4701 11.2803C12.3294 11.1397 12.2504 10.9489 12.2504 10.75V2.81031L1.53104 13.5306C1.39031 13.6714 1.19944 13.7504 1.00042 13.7504C0.801394 13.7504 0.610523 13.6714 0.469792 13.5306C0.329062 13.3899 0.25 13.199 0.25 13C0.25 12.801 0.329062 12.6101 0.469792 12.4694L11.1901 1.75H3.25042C3.0515 1.75 2.86074 1.67098 2.72009 1.53033C2.57943 1.38968 2.50042 1.19891 2.50042 1C2.50042 0.801088 2.57943 0.610322 2.72009 0.46967C2.86074 0.329018 3.0515 0.25 3.25042 0.25H13.0004C13.1993 0.25 13.3901 0.329018 13.5307 0.46967C13.6714 0.610322 13.7504 0.801088 13.7504 1Z" fill="#D2B26C"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="header__menu-nav-item">
+            <a href="#" class="header__menu-nav-link">Blog</a>
+            <ul class="header__menu-nav-sub-3 header__menu-nav-sub">
+              <li class="header__menu-nav-sub-3-item">
+                <a href="#" class="header__menu-nav-sub-3-link">
+                  <div class="header__menu-nav-sub-3-link-img">
+                    <img src="data/blog1.jpg" width="306" height="180" alt="blog">
+                  </div>
+                  <div class="header__menu-nav-sub-3-link-title">Financing Options</div>
+                  <div class="header__menu-nav-sub-3-link-text">
+                    <p>While the architects are mostly responsible for the appearance of your home, our structural team works together with them to ensure that your home is sturdy and safe, while reducing the likelihood of any building issues in the future.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-3-item">
+                <a href="#" class="header__menu-nav-sub-3-link">
+                  <div class="header__menu-nav-sub-3-link-img">
+                    <img src="data/blog2.jpg" width="306" height="180" alt="blog">
+                  </div>
+                  <div class="header__menu-nav-sub-3-link-title">Financing Options</div>
+                  <div class="header__menu-nav-sub-3-link-text">
+                    <p>While the architects are mostly responsible for the appearance of your home, our structural team works together with them to ensure that your home is sturdy and safe, while reducing the likelihood of any building issues in the future.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-3-item">
+                <a href="#" class="header__menu-nav-sub-3-link">
+                  <div class="header__menu-nav-sub-3-link-img">
+                    <img src="data/blog3.jpg" width="306" height="180" alt="blog">
+                  </div>
+                  <div class="header__menu-nav-sub-3-link-title">Financing Options</div>
+                  <div class="header__menu-nav-sub-3-link-text">
+                    <p>While the architects are mostly responsible for the appearance of your home, our structural team works together with them to ensure that your home is sturdy and safe, while reducing the likelihood of any building issues in the future.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-3-item">
+                <a href="#" class="header__menu-nav-sub-3-link">
+                  <div class="header__menu-nav-sub-3-link-img">
+                    <img src="data/blog4.jpg" width="306" height="180" alt="blog">
+                  </div>
+                  <div class="header__menu-nav-sub-3-link-title">Financing Options</div>
+                  <div class="header__menu-nav-sub-3-link-text">
+                    <p>While the architects are mostly responsible for the appearance of your home, our structural team works together with them to ensure that your home is sturdy and safe, while reducing the likelihood of any building issues in the future.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-3-item">
+                <a href="#" class="header__menu-nav-sub-3-link">
+                  <div class="header__menu-nav-sub-3-link-img">
+                    <img src="data/blog5.jpg" width="306" height="180" alt="blog">
+                  </div>
+                  <div class="header__menu-nav-sub-3-link-title">Financing Options</div>
+                  <div class="header__menu-nav-sub-3-link-text">
+                    <p>While the architects are mostly responsible for the appearance of your home, our structural team works together with them to ensure that your home is sturdy and safe, while reducing the likelihood of any building issues in the future.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="header__menu-nav-sub-3-item">
+                <a href="#" class="header__menu-nav-all-btn">
+                  View all blogs
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7504 1V10.75C13.7504 10.9489 13.6714 11.1397 13.5307 11.2803C13.3901 11.421 13.1993 11.5 13.0004 11.5C12.8015 11.5 12.6107 11.421 12.4701 11.2803C12.3294 11.1397 12.2504 10.9489 12.2504 10.75V2.81031L1.53104 13.5306C1.39031 13.6714 1.19944 13.7504 1.00042 13.7504C0.801394 13.7504 0.610523 13.6714 0.469792 13.5306C0.329062 13.3899 0.25 13.199 0.25 13C0.25 12.801 0.329062 12.6101 0.469792 12.4694L11.1901 1.75H3.25042C3.0515 1.75 2.86074 1.67098 2.72009 1.53033C2.57943 1.38968 2.50042 1.19891 2.50042 1C2.50042 0.801088 2.57943 0.610322 2.72009 0.46967C2.86074 0.329018 3.0515 0.25 3.25042 0.25H13.0004C13.1993 0.25 13.3901 0.329018 13.5307 0.46967C13.6714 0.610322 13.7504 0.801088 13.7504 1Z" fill="#D2B26C"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="header__menu-contacts">
+          <div class="header__menu-contacts-box">
+            <div class="header__menu-contacts-row">
+              <div class="header__menu-contacts-icon">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.1279 4.65854C22.038 4.58854 21.9334 4.53992 21.822 4.51636C21.7106 4.49281 21.5952 4.49494 21.4848 4.5226L15.7538 5.9551L10.0023 3.07885C9.842 2.99892 9.65843 2.97897 9.48475 3.0226L3.48475 4.5226C3.3225 4.56316 3.17845 4.65679 3.07552 4.7886C2.97258 4.92042 2.91665 5.08286 2.91663 5.2501V18.7501C2.91664 18.8641 2.94263 18.9765 2.99262 19.0789C3.0426 19.1814 3.11527 19.271 3.2051 19.3412C3.29493 19.4113 3.39956 19.46 3.51105 19.4837C3.62253 19.5073 3.73794 19.5052 3.8485 19.4776L9.57944 18.0451L15.331 20.9214C15.4354 20.9728 15.5502 20.9998 15.6666 21.0001C15.7279 21.0001 15.789 20.9925 15.8485 20.9776L21.8485 19.4776C22.0108 19.437 22.1548 19.3434 22.2577 19.2116C22.3607 19.0798 22.4166 18.9174 22.4166 18.7501V5.2501C22.4167 5.13603 22.3907 5.02346 22.3406 4.92095C22.2906 4.81844 22.2178 4.7287 22.1279 4.65854ZM10.4166 4.96323L14.9166 7.21323V19.037L10.4166 16.787V4.96323ZM4.41663 5.83604L8.91663 4.71104V16.6642L4.41663 17.7892V5.83604ZM20.9166 18.1642L16.4166 19.2892V7.33604L20.9166 6.21104V18.1642Z" fill="#D2B26C"/>
+                </svg>
+              </div>
+              <address class="header__menu-contacts-address">70 Lancaster Ave Suite B Malvarn, PA 19355</address>
+            </div>
+            <div class="header__menu-contacts-row">
+              <div class="header__menu-contacts-icon">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.5138 14.8557L17.0973 12.8766L17.0851 12.871C16.8558 12.7729 16.6057 12.7336 16.3574 12.7565C16.109 12.7794 15.8703 12.8639 15.6629 13.0022C15.6385 13.0184 15.615 13.0359 15.5926 13.0547L13.3107 15.0001C11.8651 14.2979 10.3726 12.8166 9.67038 11.3897L11.6185 9.07318C11.6373 9.04974 11.6551 9.0263 11.6719 9.00099C11.8073 8.79409 11.8895 8.55692 11.9111 8.31059C11.9327 8.06427 11.893 7.81642 11.7957 7.58912V7.57787L9.81101 3.1538C9.68233 2.85687 9.46106 2.60951 9.18025 2.44865C8.89943 2.2878 8.57412 2.22208 8.25288 2.2613C6.98254 2.42847 5.81649 3.05234 4.97251 4.01639C4.12853 4.98045 3.66434 6.21876 3.66663 7.50005C3.66663 14.9438 9.72288 21.0001 17.1666 21.0001C18.4479 21.0023 19.6862 20.5382 20.6503 19.6942C21.6144 18.8502 22.2382 17.6841 22.4054 16.4138C22.4447 16.0927 22.3791 15.7674 22.2184 15.4866C22.0577 15.2058 21.8106 14.9845 21.5138 14.8557ZM17.1666 19.5001C13.9851 19.4966 10.9349 18.2312 8.68519 15.9815C6.43551 13.7318 5.17011 10.6816 5.16663 7.50005C5.16311 6.58458 5.49293 5.69911 6.09451 5.00903C6.69609 4.31895 7.52829 3.87143 8.4357 3.75005C8.43533 3.7538 8.43533 3.75756 8.4357 3.7613L10.4044 8.16755L8.46663 10.4869C8.44697 10.5096 8.4291 10.5337 8.4132 10.5591C8.27212 10.7756 8.18935 11.0249 8.17293 11.2827C8.1565 11.5406 8.20697 11.7984 8.31945 12.031C9.16882 13.7682 10.9191 15.5054 12.6751 16.3538C12.9094 16.4652 13.1687 16.5139 13.4275 16.4952C13.6863 16.4765 13.9358 16.3909 14.1516 16.2469C14.1757 16.2307 14.1989 16.2132 14.221 16.1944L16.5001 14.2501L20.9063 16.2235C20.9063 16.2235 20.9138 16.2235 20.9166 16.2235C20.7967 17.1322 20.3499 17.9661 19.6597 18.5691C18.9695 19.1722 18.0832 19.5031 17.1666 19.5001Z" fill="#D2B26C"/>
+                </svg>
+              </div>
+              <ul class="header__menu-contacts-list">
+                <li><a href="tel:6106044421">610-604-4421</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="header__menu-nav-all-btn">
+            Contact Us
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7504 1V10.75C13.7504 10.9489 13.6714 11.1397 13.5307 11.2803C13.3901 11.421 13.1993 11.5 13.0004 11.5C12.8015 11.5 12.6107 11.421 12.4701 11.2803C12.3294 11.1397 12.2504 10.9489 12.2504 10.75V2.81031L1.53104 13.5306C1.39031 13.6714 1.19944 13.7504 1.00042 13.7504C0.801394 13.7504 0.610523 13.6714 0.469792 13.5306C0.329062 13.3899 0.25 13.199 0.25 13C0.25 12.801 0.329062 12.6101 0.469792 12.4694L11.1901 1.75H3.25042C3.0515 1.75 2.86074 1.67098 2.72009 1.53033C2.57943 1.38968 2.50042 1.19891 2.50042 1C2.50042 0.801088 2.57943 0.610322 2.72009 0.46967C2.86074 0.329018 3.0515 0.25 3.25042 0.25H13.0004C13.1993 0.25 13.3901 0.329018 13.5307 0.46967C13.6714 0.610322 13.7504 0.801088 13.7504 1Z" fill="#D2B26C"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>

@@ -1,0 +1,84 @@
+.reviews {
+  position: relative;
+  padding-top: 50px;
+  &__title {
+    position: relative;
+    color: #111;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 48px;
+  }
+  &__slider {
+    position: relative;
+    margin: 0 -12px 48px;
+    .slick-slide {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    .slick-arrow {
+      position: absolute;
+      z-index: 1;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      top: 50%;
+      margin-top: -24px;
+      transition: 0.3s ease-in-out;
+      @include desktop-hover() {
+        background: $yellow;
+        border-color: $yellow;
+      }
+      svg {
+        fill: #111;
+      }
+      &.slick-next {
+        right: -12px;
+        svg {
+          transform: scaleX(-1);
+        }
+      }
+      &.slick-prev {
+        left: -12px;
+      }
+    }
+  }
+  &__slider-item {
+    position: relative;
+    vertical-align: top;
+  }
+  &__info {
+    position: relative;
+    padding: 48px 24px;
+    border-radius: 24px;
+    background: #fbf7f0;
+    display: flex;
+  }
+  &__info-item {
+    position: relative;
+    width: 100%;
+  }
+  &__info-item-value {
+    position: relative;
+    margin-bottom: 16px;
+    color: $yellow;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: normal;
+  }
+  &__info-item-text {
+    position: relative;
+    color: #313131;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,147 @@
+.footer {
+  position: relative;
+  &__top {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f1e7d1;
+    border-top: 1px solid #f1e7d1;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    position: relative;
+    flex: 0 0 auto;
+  }
+  &__logo-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__nav {
+    position: relative;
+    flex: 0 0 648px;
+    max-width: 648px;
+    width: 100%;
+    margin-left: auto;
+  }
+  &__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      position: relative;
+      flex: 0 0 calc(50% - 24px);
+      max-width: calc(50% - 24px);
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #313131;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      transition: 0.3s ease-in-out;
+      @include desktop-hover() {
+        color: $yellow;
+      }
+    }
+  }
+  &__contacts {
+    position: relative;
+    flex: 0 0 300px;
+    max-width: 300px;
+    width: 100%;
+  }
+  &__contacts-row {
+    position: relative;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__contacts-icon {
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: 12px;
+  }
+  &__contacts-address {
+    position: relative;
+    color: #626262;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  &__contacts-list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      position: relative;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #626262;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+      transition: 0.3s ease-in-out;
+      @include desktop-hover() {
+        color: $yellow;
+      }
+    }
+  }
+  &__bottom {
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__bottom-links {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li {
+      position: relative;
+      margin-right: 24px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #898989;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      transition: 0.3s ease-in-out;
+      @include desktop-hover() {
+        color: $yellow;
+      }
+    }
+  }
+  &__copy {
+    position: relative;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}

@@ -1,6 +1,12 @@
 import $ from 'jquery'
 
 export default () => {
+  $('.js-open-menu').on('click', ()=> {
+    $('.header').addClass('open-menu')
+  })
+  $('.js-close-menu').on('click', () => {
+    $('.header').removeClass('open-menu')
+  })
 
 // $('.header__mobile-menu').on('click', () => {
 //   $('.header__mobile').addClass('active')
