@@ -1,0 +1,139 @@
+.full-service {
+  position: relative;
+  &__head {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+  }
+  &__head-title {
+    color: #111;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+    max-width: 440px;
+    flex: 0 0 440px;
+    margin-right: 110px;
+  }
+  &__head-text {
+    position: relative;
+    flex: 1 1 auto;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-left: 40px;
+    border-left: 8px solid $yellow;
+    p {
+      margin: 0;
+    }
+  }
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+  &__nav {
+    position: relative;
+    flex: 0 0 306px;
+    max-width: 306px;
+    width: 100%;
+    margin-right: 24px;
+    padding-top: 24px;
+  }
+  &__nav-list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      position: relative;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      color: #898989;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: normal;
+      border-left: 3px solid transparent;
+      transition: 0.3s ease-in-out;
+      @include desktop-hover() {
+        color: $yellow;
+      }
+      &.active {
+        color: $yellow;
+        padding-left: 17px;
+        border-color: $yellow;
+      }
+    }
+  }
+  &__options {
+    position: relative;
+    margin-right: -72px;
+    border-left: 1px solid $yellow;
+  }
+  &__tab {
+    position: relative;
+  }
+  &__tab-head {
+    position: relative;
+    padding: 63px 86px;
+  }
+  &__tab-head-title {
+    position: relative;
+    margin: 0 0 12px;
+    color: #111;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  &__tab-head-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__tab-head-text {
+    position: relative;
+    margin: 0 0 24px;
+    color: #313131;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    max-width: 550px;
+    p {
+      margin: 0;
+    }
+  }
+  &__tab-head-btn {
+    position: relative;
+  }
+  &__tab-body {
+  }
+  &__tab-body-item {
+  }
+  &__tab-body-item-title {
+  }
+  &__tab-body-item-text {
+  }
+}
+.container {
+}
+.tab {
+}
+.btn {
+  &--yellow {
+  }
+}
