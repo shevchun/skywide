@@ -76,6 +76,12 @@
     max-width: calc(68% - 24px);
     width: 100%;
     margin-right: 24px;
+    text-decoration: none;
+    @include desktop-hover() {
+      .portfolio__slider-item-title {
+        color: $yellow;
+      }
+    }
     img {
       width: 100%;
       height: 100%;
@@ -102,6 +108,7 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 8px;
+    transition: 0.3s ease-in-out;
   }
   &__slider-item-text {
     position: relative;
@@ -115,6 +122,11 @@
     flex: 0 0 32%;
     max-width: 32%;
     width: 100%;
+    @include desktop-hover() {
+      .portfolio__slider-item-title {
+        color: $yellow;
+      }
+    }
     img {
       width: 100%;
       height: 100%;

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    {% include 'header.html' %}
+    <div class="wrapper">
+      <div class="first-box">
+        <picture class="first-box__bg">
+          <source srcset="data/portfolio-mobile.jpg" media="(max-width: 1200px)">
+          <img src="data/portfolio.jpg" width="1440" height="540" alt="portfolio">
+        </picture>
+        <div class="first-box__container container">
+          <h1 class="first-box__title">Portfolio</h1>
+          <div class="first-box__info">
+            <div class="first-box__text">
+              <p>Although there are many advantages to a custom-built home. Building one won’t be without challenges. Providing all your needs, our team is ready to do it all, starting from real estate consulting all the way until the setup of a couch in your living room.</p>
+            </div>
+            <div class="first-box__portfolio-info">
+              <div class="first-box__portfolio-info-cell">
+                <div class="first-box__portfolio-info-cell-value js-count" data-count="37">0</div>
+                <div class="first-box__portfolio-info-cell-title">Projects</div>
+              </div>
+              <div class="first-box__portfolio-info-cell">
+                <div class="first-box__portfolio-info-cell-value js-count" data-count="6">0</div>
+                <div class="first-box__portfolio-info-cell-title">Years of Experience</div>
+              </div>
+              <div class="first-box__portfolio-info-cell">
+                <div class="first-box__portfolio-info-cell-value js-count" data-count="52000">0+</div>
+                <div class="first-box__portfolio-info-cell-title">ft2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+    {% include 'popup.html' %}
+    {% include 'js.html' %}
+  </body>
+</html>
