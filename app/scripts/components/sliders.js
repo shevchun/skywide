@@ -3,6 +3,21 @@ import 'slick-carousel';
 
 export default () => {
 
+  $('.portfolio-page__item').each((i, element) => {
+    $(element).find('.portfolio-page__item-slider').slick({
+      slidesToShow: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: $(element).find('.portfolio-page__item-nav')
+    })
+    $(element).find('.portfolio-page__item-nav').slick({
+      slidesToShow: 5,
+      asNavFor: $(element).find('.portfolio-page__item-slider'),
+      arrows: false,
+      focusOnSelect: true
+    })
+  })
+
   if ($('.portfolio__slider').length) {
     $('.portfolio__slider').slick({
       slidesToShow: 1,

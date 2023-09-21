@@ -1,0 +1,109 @@
+.portfolio-page {
+  position: relative;
+  &__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+  }
+  &__item {
+    position: relative;
+    flex: 0 0 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+    width: 100%;
+    margin-left: 24px;
+    margin-bottom: 52px;
+  }
+  &__item-slider {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  &__item-slider-item {
+    vertical-align: top;
+    img {
+      width: 100%;
+    }
+  }
+  &__item-nav {
+    position: relative;
+    margin-bottom: 16px;
+    margin-right: -8px;
+    .slick-slide {
+      margin-right: 8px;
+    }
+  }
+  &__item-nav-item {
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+    .slick-current & {
+      img {
+        opacity: 1;
+      }
+    }
+    @include desktop-hover() {
+      img {
+        opacity: 1;
+      }
+    }
+    img {
+      width: 100%;
+      opacity: 0.5;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  &__item-nav-item-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  &__item-nav-item-link-icon {
+    margin-bottom: 2px;
+  }
+  &__item-nav-item-link-text {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+  }
+  &__item-title {
+    position: relative;
+    margin-bottom: 16px;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__item-labels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      flex: 0 0 auto;
+      color: #313131;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      padding: 4px 16px;
+      border-radius: 8px;
+      background: #fbf7f0;
+      margin-right: 12px;
+      margin-bottom: 12px;
+    }
+  }
+}
