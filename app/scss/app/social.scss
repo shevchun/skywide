@@ -1,0 +1,29 @@
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 34px 0 0;
+  display: flex;
+  align-items: center;
+  li {
+    flex: 0 0 auto;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    position: relative;
+    display: flex;
+    transition: .2s ease-in-out;
+    @include desktop-hover() {
+      transform: translateY(-2px);
+      svg {
+        fill: $yellow;
+      }
+    }
+    svg {
+      fill: #aaa;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

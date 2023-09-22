@@ -1,6 +1,8 @@
 .btn {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   vertical-align: top;
   text-decoration: none;
   cursor: pointer;
@@ -17,12 +19,20 @@
   @include desktop-hover() {
     background: $yellow;
   }
+  svg {
+    flex: 0 0 auto;
+    margin-left: 12px;
+    transition: .3s ease-in-out;
+  }
   &--yellow {
     background: $yellow;
     @include desktop-hover() {
       background: #313131;
       border-color: #313131;
       color: $yellow;
+      svg {
+        fill: $yellow;
+      }
     }
   }
   &--white {

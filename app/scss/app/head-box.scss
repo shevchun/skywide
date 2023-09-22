@@ -1,0 +1,120 @@
+.head-box {
+  position: relative;
+  background: #f7f7f7;
+  margin-bottom: 72px;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex: 0 0 636px;
+    max-width: 636px;
+    width: 100%;
+    margin-right: 24px;
+  }
+  &__title-holder {
+    position: relative;
+    margin-bottom: 28px;
+  }
+  &__title {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: #313131;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__time {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #e1cb9d;
+    padding: 7px 11px;
+  }
+  &__time-icon {
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: 8px;
+  }
+  &__time-val {
+    color: $yellow;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    flex: 0 0 auto;
+    margin-right: 4px;
+  }
+  &__time-text {
+    color: $yellow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  &__text-holder {
+    position: relative;
+    padding-left: 32px;
+    border-left: 8px solid $yellow;
+  }
+  &__text {
+    position: relative;
+    margin-bottom: 28px;
+    color: #626262;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26.5px;
+    p {
+      margin: 0;
+    }
+  }
+  &__triggers {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__triggers-item {
+    position: relative;
+    max-width: 220px;
+    width: 100%;
+    margin-right: 8px;
+    display: flex;
+  }
+  &__triggers-item-icon {
+    position: relative;
+    flex: 0 0 28px;
+    width: 28px;
+    margin-right: 8px;
+  }
+  &__triggers-item-box {
+    position: relative;
+  }
+  &__triggers-item-title {
+    position: relative;
+    margin-bottom: 8px;
+    color: #626262;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  &__triggers-item-author {
+    position: relative;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26.5px;
+  }
+  &__right {
+    position: relative;
+    flex: 0 0 auto;
+  }
+}

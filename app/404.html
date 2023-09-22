@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    {% include 'header.html' %}
+    <div class="wrapper">
+      <div class="container">
+        <div class="error-page">
+          <div class="error-page__title">Sorry, page not found</div>
+          <div class="error-page__text">We can’t seem to find a page you are looking for</div>
+          <div class="error-page__img">
+            <img src="data/error-page.png" width="534" height="280" alt="error-page">
+          </div>
+          <a href="#" class="error-page__home">
+            <svg width="32" height="33" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.2925 15.7924L13.2925 6.79243C13.4801 6.60479 13.7346 6.49938 14 6.49938C14.2654 6.49938 14.5199 6.60479 14.7075 6.79243C14.8951 6.98007 15.0006 7.23457 15.0006 7.49993C15.0006 7.7653 14.8951 8.01979 14.7075 8.20743L7.41375 15.4999L27 15.4999C27.2652 15.4999 27.5196 15.6053 27.7071 15.7928C27.8946 15.9804 28 16.2347 28 16.4999C28 16.7651 27.8946 17.0195 27.7071 17.207C27.5196 17.3946 27.2652 17.4999 27 17.4999L7.41375 17.4999L14.7075 24.7924C14.8951 24.9801 15.0006 25.2346 15.0006 25.4999C15.0006 25.7653 14.8951 26.0198 14.7075 26.2074C14.5199 26.3951 14.2654 26.5005 14 26.5005C13.7346 26.5005 13.4801 26.3951 13.2925 26.2074L4.2925 17.2074C4.19952 17.1146 4.12576 17.0043 4.07544 16.8829C4.02512 16.7615 3.99921 16.6313 3.99921 16.4999C3.99921 16.3685 4.02512 16.2384 4.07544 16.117C4.12576 15.9956 4.19952 15.8853 4.2925 15.7924Z" />
+            </svg>
+            Back to homepage
+          </a>
+          <div class="error-page__btns">
+            <a href="#" class="error-page__btn btn btn--yellow">Contact us</a>
+            <a href="#" class="error-page__btn btn">Check our portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+    {% include 'popup.html' %}
+    {% include 'js.html' %}
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.input-style {
+  position: relative;
+  width: 100%;
+  font-family: "Manrope";
+  height: 53px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  padding: 5px 16px;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  &::placeholder {
+    color: #cfcfcf;
+  }
+  &:focus {
+    border-color: $yellow;
+  }
+}
+
+.textarea-style {
+  position: relative;
+  width: 100%;
+  font-family: "Manrope";
+  height: 172px;
+  resize: none;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  padding: 14px 16px;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  &::placeholder {
+    color: #cfcfcf;
+  }
+  &:focus {
+    border-color: $yellow;
+  }
+}

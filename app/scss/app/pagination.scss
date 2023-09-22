@@ -1,0 +1,79 @@
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    flex: 0 0 auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    &.pagination__first {
+      margin-right: 28px;
+      a {
+        border-radius: 0;
+        width: auto;
+        color: #4f4f4f;
+        @include desktop-hover() {
+          background: transparent;
+          color: $yellow;
+        }
+      }
+    }
+    &.pagination__last {
+      margin-left: 28px;
+      a {
+        border-radius: 0;
+        width: auto;
+        color: #4f4f4f;
+        @include desktop-hover() {
+          background: transparent;
+          color: $yellow;
+        }
+      }
+    }
+    &.disabled {
+      a {
+        color: #cfcfcf;
+        pointer-events: none;
+      }
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: $yellow;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    @include desktop-hover() {
+      background: $yellow;
+      color: #fff;
+    }
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 40px;
+    text-decoration: none;
+    color: $yellow;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 50%;
+    width: 40px;
+  }
+  &__current {
+    span {
+      background: $yellow;
+      color: #fff;
+    }
+  }
+}
