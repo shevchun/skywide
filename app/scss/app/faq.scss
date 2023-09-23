@@ -1,0 +1,81 @@
+.faq {
+  position: relative;
+  &__title {
+    position: relative;
+    margin-bottom: 28px;
+    color: #313131;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__list {
+    position: relative;
+  }
+  &__item {
+    position: relative;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    @include desktop-hover() {
+      .faq__item-title {
+        color: $yellow;
+      }
+    }
+  }
+  &__item-title {
+    position: relative;
+    margin-right: 15px;
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: 0.3s ease-in-out;
+  }
+  &__item-btn {
+    position: relative;
+    flex: 0 0 24px;
+    max-width: 24px;
+    width: 100%;
+    height: 24px;
+    .faq__item.active & {
+      &::after {
+       transform: rotate(-90deg);
+       
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background: $yellow;
+      top: 50%;
+      left: 50%;
+      margin-top: -1px;
+      margin-left: -9px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 18px;
+      width: 2px;
+      background: $yellow;
+      top: 50%;
+      left: 50%;
+      margin-left: -1px;
+      margin-top: -9px;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  &__item-body {
+    padding-top: 20px;
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.info-text {
+  position: relative;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid transparent;
+  padding: 20px;
+  border-color: #5764da;
+  background: #f7f7f7;
+  &--blue {
+    border-color: #5764da;
+    background: #f7f7f7;
+  }
+  &--red {
+    border-color: #d72134;
+    background: #fff0f2;
+  }
+  &--green {
+    border-color: #00a77c;
+    background: #f0fff0;
+  }
+  &__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 24px;
+    max-width: 24px;
+    height: 24px;
+    width: 100%;
+    margin-right: 17px;
+    border-radius: 50%;
+    background: #5764da;
+    .info-text--blue & {
+      background: #5764da;
+    }
+    .info-text--red & {
+      background: #d72134;
+    }
+    .info-text--green & {
+      background: #00a77c;
+    }
+  }
+  &__text {
+    position: relative;
+  }
+}

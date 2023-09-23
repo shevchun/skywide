@@ -1,0 +1,45 @@
+.resources {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    .resources.active & {
+      svg {
+        transform: scaleY(1);
+      }
+    }
+    svg {
+      transform: scaleY(-1);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  &__title {
+    color: #313131;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 15px;
+    svg {
+      flex: 0 0 auto;
+    }
+  }
+  &__body {
+    position: relative;
+    padding-top: 24px;
+    display: none;
+    ol {
+      li {
+        &::before {
+          color: #111 !important;
+        }
+      }
+    }
+  }
+}
