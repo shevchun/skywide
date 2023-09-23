@@ -4,9 +4,11 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   &__aside {
-    position: relative;
+    position: sticky;
+    top: 120px;
     flex: 0 0 220px;
     max-width: 220px;
     width: 100%;
@@ -44,6 +46,12 @@
       font-weight: 500;
       line-height: 22px;
       transition: 0.3s ease-in-out;
+      &.active {
+        color: $yellow;
+        &::before {
+          opacity: 1;
+        }
+      }
       @include desktop-hover() {
         color: $yellow;
         &::before {

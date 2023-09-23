@@ -2,6 +2,10 @@ import $ from 'jquery'
 
 export default () => {
 
+  if ($('.article__aside').length) {
+    $('.wrapper').addClass('wrapper--ovv')
+  }
+
   $('.resources__head').on('click', function resourcesFunc() {
     $(this).siblings('.resources__body').slideToggle()
     $(this).parents('.resources').toggleClass('active')
@@ -13,8 +17,8 @@ export default () => {
   })
 
   const navigationLinks = document.querySelectorAll('.article__nav a');
-  const sidebarMenu = document.querySelector('.blog__contents');
-
+  const sidebarMenu = document.querySelector('.article__aside');
+  
   function isElementVisible(element) {
     const rect = element.getBoundingClientRect();
     return (

@@ -1,0 +1,41 @@
+.experience {
+  position: relative;
+  padding-top: 88px;
+  &__head {
+    position: relative;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    position: relative;
+    margin: 0;
+    color: #111;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: normal;
+  }
+  &__btns {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    min-width: 196px;
+    margin-left: 24px;
+  }
+  &__text {
+    position: relative;
+    padding-left: 48px;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    border-left: 8px solid #e1e1e1;
+    margin-bottom: 48px;
+    p {
+      margin: 0;
+    }
+  }
+}

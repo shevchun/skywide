@@ -18,6 +18,9 @@ body {
   overflow: hidden;
   padding-top: 88px;
   padding-bottom: 50px;
+  &--ovv {
+    overflow: initial;
+  }
 }
 
 .container {
