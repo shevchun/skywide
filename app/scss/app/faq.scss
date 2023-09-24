@@ -13,7 +13,6 @@
   &__item {
     position: relative;
     border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -37,6 +36,10 @@
     font-weight: 700;
     line-height: 24px;
     transition: 0.3s ease-in-out;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   &__item-btn {
     position: relative;
@@ -46,8 +49,7 @@
     height: 24px;
     .faq__item.active & {
       &::after {
-       transform: rotate(-90deg);
-       
+        transform: rotate(-90deg);
       }
     }
     &::before {

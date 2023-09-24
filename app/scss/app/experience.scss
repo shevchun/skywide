@@ -1,12 +1,19 @@
 .experience {
   position: relative;
   padding-top: 88px;
+  @include response(1200px) {
+    padding-top: 32px;
+  }
   &__head {
     position: relative;
     margin-bottom: 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      display: block;
+    }
   }
   &__title {
     position: relative;
@@ -15,6 +22,11 @@
     font-size: 48px;
     font-weight: 800;
     line-height: normal;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+    }
   }
   &__btns {
     position: relative;
@@ -24,6 +36,11 @@
   &__btn {
     min-width: 196px;
     margin-left: 24px;
+    @include response(1200px) {
+      min-width: auto;
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
   &__text {
     position: relative;
@@ -34,6 +51,12 @@
     line-height: 30px;
     border-left: 8px solid #e1e1e1;
     margin-bottom: 48px;
+    @include response(1200px) {
+      border-width: 4px;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 22px;
+    }
     p {
       margin: 0;
     }

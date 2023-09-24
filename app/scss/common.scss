@@ -18,6 +18,9 @@ body {
   overflow: hidden;
   padding-top: 88px;
   padding-bottom: 50px;
+  @include response(1200px) {
+    padding-top: 63px;
+  }
   &--ovv {
     overflow: initial;
   }
@@ -29,16 +32,15 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @include response(1300px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
-
-// {
-//   max-height: 40px;
-//   overflow: hidden;
-//   -webkit-line-clamp: 2;
-//   display: box;
-//   display: -webkit-box;
-//   -webkit-box-orient: vertical;
-// }
 
 * {
   outline: none;

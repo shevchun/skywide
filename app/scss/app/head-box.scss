@@ -2,9 +2,15 @@
   position: relative;
   background: #f7f7f7;
   margin-bottom: 72px;
+  @include response(1200px) {
+    margin-bottom: 32px;
+  }
   &__container {
     display: flex;
     align-items: center;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__left {
     padding-top: 40px;
@@ -13,10 +19,18 @@
     max-width: 636px;
     width: 100%;
     margin-right: 24px;
+    @include response(1200px) {
+      max-width: 100%;
+      margin-right: 0;
+      padding-bottom: 24px;
+    }
   }
   &__title-holder {
     position: relative;
     margin-bottom: 28px;
+    @include response(1200px) {
+      margin-bottom: 12px;
+    }
   }
   &__title {
     position: relative;
@@ -28,6 +42,12 @@
     font-weight: 700;
     line-height: 40px;
     margin-right: 16px;
+    @include response(1200px) {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 36px;
+      margin-right: 0;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -116,6 +136,10 @@
   &__right {
     position: relative;
     flex: 0 0 auto;
+    @include response(1200px) {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
   }
   &__author-box {
     position: relative;

@@ -7,6 +7,11 @@
     padding-bottom: 64px;
     display: flex;
     align-items: flex-start;
+    @include response(1200px) {
+      padding-top: 48px;
+      padding-bottom: 24px;
+      display: block;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -26,6 +31,11 @@
     font-weight: 800;
     line-height: normal;
     flex: 0 0 auto;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+    }
   }
   &__descriptions {
     position: relative;
@@ -34,6 +44,12 @@
     font-weight: 500;
     line-height: 30px;
     margin-left: 88px;
+    @include response(1200px) {
+      margin-left: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
     p {
       margin: 0;
     }
@@ -41,12 +57,21 @@
   &__info {
     position: relative;
     display: flex;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__info-img {
+    display: block;
     position: relative;
     margin-left: -72px;
     flex: 0 0 378px;
     margin-right: 66px;
+    @include response(1200px) {
+      margin-left: -16px;
+      margin-right: -16px;
+      height: 211px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -66,6 +91,10 @@
     margin-bottom: 56px;
     display: flex;
     align-items: center;
+    @include response(1200px) {
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -75,11 +104,19 @@
       left: 28px;
       top: 50%;
       transform: translateY(-50%);
+      @include response(1200px) {
+        height: calc(100% + 32px);
+        top: 0;
+        left: 24px;
+      }
     }
     &:first-child {
       &::before {
         height: calc(50% + 28px);
         transform: none;
+        @include response(1200px) {
+          height: calc(50% + 16px);
+        }
       }
     }
     &:last-child {
@@ -89,6 +126,10 @@
         bottom: 50%;
         transform: none;
         top: auto;
+        @include response(1200px) {
+          height: calc(50% + 16px);
+          bottom: 100%;
+        }
       }
     }
   }
@@ -103,6 +144,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include response(1200px) {
+      flex: 0 0 48px;
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
   &__item-title {
     position: relative;
@@ -114,6 +165,14 @@
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
+    @include response(1200px) {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      max-width: calc(100% - 64px);
+      flex: calc(100% - 64px);
+      margin-right: 0;
+    }
   }
   &__item-text {
     position: relative;
@@ -121,6 +180,12 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+      margin-left: 64px;
+      flex: 0 0 calc(100% - 64px);
+    }
     p {
       margin: 0;
     }

@@ -8,10 +8,17 @@
     border-top: 1px solid #f1e7d1;
     display: flex;
     justify-content: space-between;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__logo {
     position: relative;
     flex: 0 0 auto;
+    @include response(1200px) {
+      max-width: 126px;
+      margin-bottom: 24px;
+    }
   }
   &__logo-link {
     position: absolute;
@@ -26,6 +33,9 @@
     max-width: 648px;
     width: 100%;
     margin-left: auto;
+    @include response(1200px) {
+      max-width: 100%;
+    }
   }
   &__nav-list {
     list-style: none;
@@ -33,6 +43,9 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    @include response(1200px) {
+      display: block;
+    }
     li {
       position: relative;
       flex: 0 0 calc(50% - 24px);
@@ -40,6 +53,11 @@
       width: 100%;
       margin-right: 24px;
       margin-bottom: 16px;
+      @include response(1200px) {
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
     }
     a {
       display: block;
@@ -49,6 +67,11 @@
       font-weight: 600;
       line-height: normal;
       transition: 0.3s ease-in-out;
+      @include response(1200px) {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+      }
       @include desktop-hover() {
         color: $yellow;
       }
@@ -59,6 +82,9 @@
     flex: 0 0 300px;
     max-width: 300px;
     width: 100%;
+    @include response(1200px) {
+      max-width: 100%;
+    }
   }
   &__contacts-row {
     position: relative;
@@ -110,6 +136,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__bottom-links {
     position: relative;
@@ -117,9 +146,15 @@
     padding: 0;
     margin: 0;
     display: flex;
+    @include response(1200px) {
+      margin-bottom: 12px;
+    }
     li {
       position: relative;
       margin-right: 24px;
+      @include response(1200px) {
+        margin-right: 12px;
+      }
       &:last-child {
         margin-right: 0;
       }

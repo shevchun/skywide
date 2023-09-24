@@ -3,6 +3,9 @@
   &__main {
     position: relative;
     padding-top: 40px;
+    @include response(1200px) {
+      padding-top: 32px;
+    }
   }
   &__main-head {
     position: relative;
@@ -10,6 +13,10 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 32px;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      display: block;
+    }
   }
   &__main-title {
     position: relative;
@@ -19,6 +26,12 @@
     font-weight: 800;
     margin-right: 32px;
     line-height: normal;
+    @include response(1200px) {
+      font-size: 28px;
+      line-height: 36px;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
   }
   &__main-text {
     position: relative;
@@ -31,6 +44,14 @@
     flex: 0 0 600px;
     max-width: 600px;
     width: 100%;
+    @include response(1200px) {
+      max-width: 100%;
+      padding-left: 20px;
+      border-width: 4px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
     p {
       margin: 0;
     }
@@ -44,9 +65,19 @@
     margin-right: 40px;
     position: relative;
     z-index: 1;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include response(1200px) {
+      min-width: auto;
+      margin-right: 20px;
+    }
   }
   &__main-img {
     position: relative;
+    @include response(1200px) {
+      margin-top: 0 !important;
+    }
     img {
       width: 100%;
     }
@@ -62,6 +93,14 @@
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
+    @include response(1200px) {
+      margin-top: 48px;
+      margin-bottom: 48px;
+      border-width: 4px;
+      font-size: 14px;
+      line-height: 22px;
+      padding-left: 24px;
+    }
     p {
       margin: 0;
     }

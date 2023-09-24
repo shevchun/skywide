@@ -4,9 +4,15 @@
   margin: 34px 0 0;
   display: flex;
   align-items: center;
+  @include response(1200px) {
+    margin-top: 14px;
+  }
   li {
     flex: 0 0 auto;
     margin-right: 24px;
+    @include response(1200px) {
+      margin-right: 12px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -24,6 +30,10 @@
     svg {
       fill: #aaa;
       transition: 0.3s ease-in-out;
+      @include response(1200px) {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 }
