@@ -11,6 +11,9 @@
     margin-right: 4px;
     &.pagination__first {
       margin-right: 28px;
+      @include response(1200px) {
+        margin-right: 20px;
+      }
       a {
         border-radius: 0;
         width: auto;
@@ -23,6 +26,9 @@
     }
     &.pagination__last {
       margin-left: 28px;
+      @include response(1200px) {
+        margin-left: 20px;
+      }
       a {
         border-radius: 0;
         width: auto;
@@ -52,6 +58,10 @@
     font-weight: 400;
     border-radius: 50%;
     transition: 0.3s ease-in-out;
+    @include response(1200px) {
+      width: 25px;
+      font-size: 12px;
+    }
     @include desktop-hover() {
       background: $yellow;
       color: #fff;
@@ -61,19 +71,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 46px;
+    width: 40px;
     height: 40px;
     text-decoration: none;
     color: $yellow;
     font-size: 16px;
     font-weight: 400;
     border-radius: 50%;
-    width: 40px;
+    @include response(1200px) {
+      width: 25px;
+    }
   }
   &__current {
     span {
       background: $yellow;
       color: #fff;
+      @include response(1200px) {
+        width: 40px;
+      }
     }
   }
 }

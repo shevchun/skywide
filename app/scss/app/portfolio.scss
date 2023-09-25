@@ -2,10 +2,18 @@
   position: relative;
   padding-top: 88px;
   padding-bottom: 50px;
+  @include response(1200px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
   &__head {
     position: relative;
     margin-bottom: 68px;
     display: flex;
+    @include response(1200px) {
+      display: block;
+      margin-bottom: 20px;
+    }
   }
   &__title {
     position: relative;
@@ -17,6 +25,13 @@
     font-size: 48px;
     font-weight: 800;
     line-height: normal;
+    @include response(1200px) {
+      max-width: 100%;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 12px;
+    }
   }
   &__text {
     position: relative;
@@ -27,12 +42,26 @@
     line-height: 30px;
     padding-left: 40px;
     border-left: 8px solid $yellow;
+    @include response(1200px) {
+      padding-left: 16px;
+      border-width: 4px;
+      font-size: 14px;
+      line-height: 22px;
+    }
     p {
       margin: 0;
     }
   }
   &__slider {
     position: relative;
+    @include response(1200px) {
+      display: flex;
+      margin-left: -16px;
+      margin-right: -16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      overflow-x: auto;
+    }
     .slick-arrow {
       position: absolute;
       z-index: 1;
@@ -69,6 +98,11 @@
     position: relative;
     display: flex !important;
     height: 492px;
+    @include response(1200px) {
+      flex: 0 0 auto;
+      height: 237px;
+      margin-right: 12px;
+    }
   }
   &__slider-item-big {
     position: relative;
@@ -77,6 +111,11 @@
     width: 100%;
     margin-right: 24px;
     text-decoration: none;
+    @include response(1200px) {
+      flex: 0 0 254px;
+      max-width: 254px;
+      margin-right: 12px;
+    }
     @include desktop-hover() {
       .portfolio__slider-item-title {
         color: $yellow;
@@ -100,6 +139,9 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: 32px;
+    @include response(1200px) {
+      padding: 24px 12px;
+    }
   }
   &__slider-item-title {
     position: relative;
@@ -109,6 +151,11 @@
     line-height: normal;
     margin-bottom: 8px;
     transition: 0.3s ease-in-out;
+    @include response(1200px) {
+      margin-bottom: 4px;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   &__slider-item-text {
     position: relative;
@@ -116,12 +163,21 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
+    @include response(1200px) {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
   &__slider-item-small {
     position: relative;
     flex: 0 0 32%;
     max-width: 32%;
     width: 100%;
+    @include response(1200px) {
+      flex: 0 0 166px;
+      max-width: 166px;
+    }
     @include desktop-hover() {
       .portfolio__slider-item-title {
         color: $yellow;

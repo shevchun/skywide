@@ -1,12 +1,25 @@
 .first-box {
   position: relative;
   margin-bottom: 72px;
+  @include response(1200px) {
+    margin-bottom: 40px;
+  }
   &__bg {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -1;
+    @include response(1200px) {
+      &:not(.first-box__bg--author) {
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+      }
+    }
     img {
       width: 100%;
       height: 100%;
@@ -20,22 +33,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include response(1200px) {
+      min-height: auto;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   &__inner {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__inner-left {
     position: relative;
     max-width: 700px;
     width: 100%;
+    @include response(1200px) {
+      max-width: 100%;
+    }
   }
   &__inner-right {
     position: relative;
     padding-right: 36px;
     flex: 0 0 auto;
+    @include response(1200px) {
+      padding-right: 0;
+      position: absolute;
+      top: 11px;
+      right: 16px;
+    }
   }
   &__author-img {
     position: relative;
@@ -43,6 +73,10 @@
     height: 360px;
     border-radius: 50%;
     overflow: hidden;
+    @include response(1200px) {
+      width: 80px;
+      height: 80px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -55,6 +89,12 @@
     color: #313131;
     font-size: 36px;
     font-weight: 700;
+    @include response(1200px) {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 36px;
+      padding-right: 112px;
+    }
   }
   &__author-position {
     position: relative;
@@ -63,6 +103,11 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26.5px;
+    @include response(1200px) {
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   &__title {
     position: relative;
@@ -70,6 +115,12 @@
     color: #313131;
     font-size: 48px;
     font-weight: 800;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 36px;
+    }
   }
   &__info {
     position: relative;
@@ -77,6 +128,10 @@
     border-left: 8px solid $yellow;
     max-width: 600px;
     width: 100%;
+    @include response(1200px) {
+      padding-left: 20px;
+      border-width: 4px;
+    }
   }
   &__text {
     position: relative;
@@ -85,6 +140,11 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
+    @include response(1200px) {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -100,6 +160,9 @@
     position: relative;
     max-width: 145px;
     margin-right: 72px;
+    @include response(1200px) {
+      margin-right: 24px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -110,11 +173,20 @@
     color: $yellow;
     font-size: 36px;
     font-weight: 700;
+    @include response(1200px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
   &__portfolio-info-cell-title {
     color: #626262;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    @include response(1200px) {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 }

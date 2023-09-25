@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   @include response(1200px) {
-    margin-top: 14px;
+    margin-top: 22px;
   }
   li {
     flex: 0 0 auto;
@@ -20,7 +20,7 @@
   a {
     position: relative;
     display: flex;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     @include desktop-hover() {
       transform: translateY(-2px);
       svg {
@@ -30,9 +30,16 @@
     svg {
       fill: #aaa;
       transition: 0.3s ease-in-out;
-      @include response(1200px) {
-        width: 16px;
-        height: 16px;
+    }
+  }
+  &--mobile-small {
+    margin-top: 14px;
+    a {
+      svg {
+        @include response(1200px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }

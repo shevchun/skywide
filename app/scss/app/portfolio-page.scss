@@ -5,6 +5,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -24px;
+    @include response(1200px) {
+      margin-left: 0;
+    }
   }
   &__item {
     position: relative;
@@ -13,6 +16,15 @@
     width: 100%;
     margin-left: 24px;
     margin-bottom: 52px;
+    @include response(1200px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   &__item-slider {
     position: relative;
@@ -28,14 +40,23 @@
     position: relative;
     margin-bottom: 16px;
     margin-right: -8px;
+    @include response(1200px) {
+      margin-right: -2px;
+    }
     .slick-slide {
       margin-right: 8px;
+      @include response(1200px) {
+        margin-right: 2px;
+      }
     }
   }
   &__item-nav-item {
     vertical-align: top;
     position: relative;
     cursor: pointer;
+    @include response(1200px) {
+      height: 64px;
+    }
     .slick-current & {
       img {
         opacity: 1;
@@ -48,6 +69,8 @@
     }
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       opacity: 0.5;
       transition: 0.3s ease-in-out;
     }
@@ -67,6 +90,10 @@
   }
   &__item-nav-item-link-icon {
     margin-bottom: 2px;
+    @include response(1200px) {
+      width: 16px;
+      height: 16px;
+    }
   }
   &__item-nav-item-link-text {
     position: relative;
@@ -74,6 +101,11 @@
     font-weight: 500;
     line-height: 22px;
     color: #fff;
+    @include response(1200px) {
+      font-size: 9px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
   &__item-title {
     position: relative;
@@ -85,6 +117,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    @include response(1200px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
   }
   &__item-labels {
     position: relative;
@@ -104,6 +141,12 @@
       background: #fbf7f0;
       margin-right: 12px;
       margin-bottom: 12px;
+      @include response(1200px) {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: normal;
+      }
     }
   }
 }

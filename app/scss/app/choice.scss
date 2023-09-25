@@ -5,12 +5,19 @@
     position: relative;
     display: flex;
     align-items: center;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__info {
     position: relative;
     flex: 1 1 auto;
     padding-top: 40px;
     padding-bottom: 40px;
+    @include response(1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   &__title {
     position: relative;
@@ -19,6 +26,10 @@
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
+    @include response(1200px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
   &__list {
     position: relative;
@@ -27,6 +38,10 @@
     position: relative;
     margin-bottom: 56px;
     display: flex;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      display: block;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -41,6 +56,12 @@
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
+    @include response(1200px) {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 22px;
+      padding-right: 0;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -49,6 +70,9 @@
       background: $yellow;
       top: 26px;
       right: 24px;
+      @include response(1200px) {
+        display: none;
+      }
     }
   }
   &__item-text {
@@ -65,5 +89,13 @@
     flex: 0 0 auto;
     margin-right: -72px;
     margin-left: 110px;
+    @include response(1200px) {
+      display: block;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+    img {
+      width: 100%;
+    }
   }
 }

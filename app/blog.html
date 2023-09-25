@@ -5,10 +5,6 @@
     {% include 'header.html' %}
     <div class="wrapper">
       <div class="first-box">
-        <picture class="first-box__bg">
-          <source srcset="data/blog-mobile.jpg" media="(max-width: 1200px)">
-          <img src="data/blog.jpg" width="1440" height="540" alt="blog">
-        </picture>
         <div class="first-box__container container">
           <h1 class="first-box__title">Blog</h1>
           <div class="first-box__info">
@@ -17,6 +13,10 @@
             </div>
           </div>
         </div>
+        <picture class="first-box__bg">
+          <source srcset="data/blog-mobile.jpg" media="(max-width: 1200px)">
+          <img src="data/blog.jpg" width="1440" height="540" alt="blog">
+        </picture>
       </div>
       <div class="blog">
         <div class="container">

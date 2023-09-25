@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 85px;
   padding-bottom: 85px;
+  @include response(1200px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   &__text {
     color: #313131;
     font-size: 28px;
@@ -12,5 +16,17 @@
     max-width: 966px;
     width: 100%;
     margin-left: 110px;
+    @include response(1200px) {
+      margin-left: 0;
+      max-width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26.5px;
+      border-width: 4px;
+      padding-left: 16px;
+    }
+    p {
+      margin: 0;
+    }
   }
 }

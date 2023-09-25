@@ -5,10 +5,6 @@
     {% include 'header.html' %}
     <div class="wrapper">
       <div class="first-box">
-        <picture class="first-box__bg">
-          <source srcset="data/author-mobile.jpg" media="(max-width: 1200px)">
-          <img src="data/author.jpg" width="1440" height="540" alt="author">
-        </picture>
         <div class="first-box__container container">
           <div class="first-box__inner">
             <div class="first-box__inner-left">
@@ -57,6 +53,10 @@
             </div>
           </div>
         </div>
+        <picture class="first-box__bg first-box__bg--author">
+          <source srcset="data/author-mobile.jpg" media="(max-width: 1200px)">
+          <img src="data/author.jpg" width="1440" height="540" alt="author">
+        </picture>
       </div>
       <div class="blog">
         <div class="container">

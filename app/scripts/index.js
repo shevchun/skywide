@@ -15,7 +15,3 @@ document.addEventListener('DOMContentLoaded', () => {
   sliders()
   custom()
 })
-
-// $(window).on('load resize', () => {
-//   if ($(window).width() < 1200) {} 
-// })

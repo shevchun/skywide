@@ -1,6 +1,9 @@
 .first-screen {
   position: relative;
   padding-top: 80px;
+  @include response(1200px) {
+    padding-top: 20px;
+  }
   &__title {
     position: relative;
     margin: 0 0 36px;
@@ -11,15 +14,27 @@
     font-size: 48px;
     font-weight: 800;
     line-height: normal;
+    @include response(1200px) {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 36px;
+      margin-bottom: 20px;
+    }
   }
   &__btns {
     position: relative;
     display: flex;
     align-items: center;
+    @include response(1200px) {
+      margin-bottom: 20px;
+    }
   }
   &__btn-1 {
     flex: 0 0 auto;
     margin-right: 24px;
+    @include response(1200px) {
+      margin-right: 12px;
+    }
   }
   &__btn-2 {
     flex: 0 0 auto;
@@ -29,5 +44,8 @@
     width: 100%;
     margin-top: -118px;
     z-index: -1;
+    @include response(1200px) {
+      margin-top: 0;
+    }
   }
 }

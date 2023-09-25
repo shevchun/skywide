@@ -6,6 +6,11 @@
     padding-bottom: 120px;
     display: flex;
     align-items: center;
+    @include response(1200px) {
+      display: block;
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
   }
   &__head-title {
     color: #111;
@@ -17,6 +22,13 @@
     max-width: 440px;
     flex: 0 0 440px;
     margin-right: 110px;
+    @include response(1200px) {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+    }
   }
   &__head-text {
     position: relative;
@@ -27,6 +39,12 @@
     line-height: 30px;
     padding-left: 40px;
     border-left: 8px solid $yellow;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+      padding-left: 16px;
+      border-width: 4px;
+    }
     p {
       margin: 0;
     }
@@ -35,6 +53,9 @@
     position: relative;
     display: flex;
     align-items: flex-start;
+    @include response(1200px) {
+      display: block;
+    }
   }
   &__nav {
     position: relative;
@@ -43,15 +64,34 @@
     width: 100%;
     margin-right: 24px;
     padding-top: 24px;
+    @include response(1200px) {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 28px;
+      padding-top: 0;
+    }
   }
   &__nav-list {
     position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
+    @include response(1200px) {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: -16px;
+      margin-right: -16px;
+      display: flex;
+      overflow-x: auto;
+    }
     li {
       position: relative;
       margin-bottom: 24px;
+      @include response(1200px) {
+        flex: 0 0 auto;
+        margin-bottom: 0;
+        margin-right: 12px;
+      }
       &:last-child {
         margin-bottom: 0;
       }
@@ -67,6 +107,14 @@
       line-height: normal;
       border-left: 3px solid transparent;
       transition: 0.3s ease-in-out;
+      @include response(1200px) {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 8px 4px 6px;
+        border-bottom: 2px solid transparent;
+        border-left: 0;
+      }
       @include desktop-hover() {
         color: $yellow;
       }
@@ -74,6 +122,9 @@
         color: $yellow;
         padding-left: 17px;
         border-color: $yellow;
+        @include response(1200px) {
+          padding-left: 4px;
+        }
       }
     }
   }
@@ -81,6 +132,12 @@
     position: relative;
     margin-right: -72px;
     border-left: 1px solid $yellow;
+    @include response(1200px) {
+      margin-right: 0;
+      border-left: 0;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
   }
   &__tab {
     position: relative;
@@ -93,6 +150,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    @include response(1200px) {
+      padding: 60px 16px;
+    }
   }
   &__tab-head-title {
     position: relative;
@@ -101,6 +161,10 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
+    @include response(1200px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
   &__tab-head-bg {
     position: absolute;
@@ -118,6 +182,12 @@
     font-weight: 500;
     line-height: 22px;
     max-width: 550px;
+    @include response(1200px) {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+      padding-right: 90px;
+    }
     p {
       margin: 0;
     }
@@ -128,10 +198,16 @@
   &__tab-body {
     position: relative;
     padding: 40px 158px 29px 86px;
+    @include response(1200px) {
+      padding: 20px 16px;
+    }
   }
   &__tab-body-item {
     position: relative;
     margin-bottom: 40px;
+    @include response(1200px) {
+      margin-bottom: 20px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -143,6 +219,10 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   &__tab-body-item-text {
     position: relative;
@@ -150,6 +230,10 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
     p {
       margin: 0;
     }

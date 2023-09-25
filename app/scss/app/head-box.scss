@@ -11,6 +11,12 @@
     @include response(1200px) {
       display: block;
     }
+    &--mobile-revers {
+      @include response(1200px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
   &__left {
     padding-top: 40px;
@@ -23,6 +29,9 @@
       max-width: 100%;
       margin-right: 0;
       padding-bottom: 24px;
+      .head-box__container--mobile-revers & {
+        flex: 0 0 auto;
+      }
     }
   }
   &__title-holder {
@@ -47,6 +56,12 @@
       font-weight: 800;
       line-height: 36px;
       margin-right: 0;
+      .head-box__container--mobile-revers & {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 32px;
+      }
     }
     &:last-child {
       margin-right: 0;
@@ -61,6 +76,9 @@
     border-radius: 4px;
     border: 1px solid #e1cb9d;
     padding: 7px 11px;
+    @include response(1200px) {
+      padding: 4px 10px;
+    }
   }
   &__time-icon {
     position: relative;
@@ -85,6 +103,10 @@
     position: relative;
     padding-left: 32px;
     border-left: 8px solid $yellow;
+    @include response(1200px) {
+      padding-left: 16px;
+      border-width: 4px;
+    }
   }
   &__text {
     position: relative;
@@ -93,6 +115,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26.5px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
     p {
       margin: 0;
     }
@@ -108,12 +134,21 @@
     width: 100%;
     margin-right: 8px;
     display: flex;
+    @include response(1200px) {
+      margin-bottom: 12px;
+      max-width: 100%;
+      margin-right: 0;
+    }
   }
   &__triggers-item-icon {
     position: relative;
     flex: 0 0 28px;
     width: 28px;
     margin-right: 8px;
+    @include response(1200px) {
+      flex: 0 0 20px;
+      width: 20px;
+    }
   }
   &__triggers-item-box {
     position: relative;
@@ -125,6 +160,12 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+    @include response(1200px) {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
   }
   &__triggers-item-author {
     position: relative;
@@ -132,6 +173,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26.5px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   &__right {
     position: relative;

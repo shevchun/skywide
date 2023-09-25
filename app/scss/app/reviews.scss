@@ -1,6 +1,9 @@
 .reviews {
   position: relative;
   padding-top: 50px;
+  @include response(1200px) {
+    padding-top: 0;
+  }
   &__title {
     position: relative;
     color: #111;
@@ -9,10 +12,23 @@
     font-weight: 700;
     line-height: normal;
     margin: 0 0 48px;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
   }
   &__slider {
     position: relative;
     margin: 0 -12px 48px;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      margin-left: -16px;
+      margin-right: -16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      overflow-x: auto;
+    }
     .slick-slide {
       margin-left: 12px;
       margin-right: 12px;
@@ -52,6 +68,12 @@
   &__slider-item {
     position: relative;
     vertical-align: top;
+    @include response(1200px) {
+      flex: 0 0 280px;
+      max-width: 280px;
+      width: 100%;
+      margin-right: 12px;
+    }
   }
   &__info {
     position: relative;
@@ -59,10 +81,20 @@
     border-radius: 24px;
     background: #fbf7f0;
     display: flex;
+    @include response(1200px) {
+      padding: 28px 12px;
+      display: block;
+    }
   }
   &__info-item {
     position: relative;
     width: 100%;
+    @include response(1200px) {
+      margin-bottom: 28px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   &__info-item-value {
     position: relative;
@@ -72,6 +104,11 @@
     font-size: 48px;
     font-weight: 800;
     line-height: normal;
+    @include response(1200px) {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
   }
   &__info-item-text {
     position: relative;
@@ -80,5 +117,9 @@
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
+    @include response(1200px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }

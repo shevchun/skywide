@@ -2,16 +2,32 @@
   position: relative;
   padding-top: 32px;
   padding-bottom: 42px;
+  @include response(1200px) {
+    padding-top: 32px;
+    padding-bottom: 0;
+    background: #fbf7f0;
+  }
   &__box {
     position: relative;
     display: flex;
     justify-content: space-between;
+    @include response(1200px) {
+      flex-direction: column-reverse;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
   }
   &__left {
     position: relative;
     flex: 0 0 454px;
     max-width: 454px;
     width: 100%;
+    @include response(1200px) {
+      max-width: 100%;
+      flex: 0 0 auto;
+      background: #fff;
+      padding: 20px 16px 40px;
+    }
   }
   &__title {
     position: relative;
@@ -19,6 +35,11 @@
     color: #111;
     font-size: 48px;
     font-weight: 800;
+    @include response(1200px) {
+      margin-bottom: 20px;
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
   &__list {
     position: relative;
@@ -28,6 +49,9 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 48px;
+    @include response(1200px) {
+      margin-bottom: 20px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -37,6 +61,13 @@
     flex: 0 0 24px;
     width: 24px;
     margin-right: 12px;
+    @include response(1200px) {
+      flex: 0 0 20px;
+      width: 20px;
+    }
+    svg {
+      max-width: 100%;
+    }
   }
   &__item-box {
     position: relative;
@@ -48,6 +79,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    @include response(1200px) {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
   }
   &__item-list {
     list-style: none;
@@ -66,6 +101,10 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
     @include desktop-hover() {
       text-decoration: none;
     }
@@ -82,9 +121,16 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   &__item-map {
     position: relative;
+    iframe {
+      max-width: 100%;
+    }
   }
   &__right {
     position: relative;
@@ -93,6 +139,12 @@
     width: 100%;
     background: #fbf7f0;
     padding: 56px 48px;
+    margin-top: -88px;
+    @include response(1200px) {
+      margin-top: 0;
+      flex: 0 0 auto;
+      padding: 0 16px 32px;
+    }
   }
   &__form {
     position: relative;
@@ -103,12 +155,20 @@
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 32px;
+    @include response(1200px) {
+      display: none;
+    }
   }
   &__form-row {
     position: relative;
     margin-bottom: 16px;
     display: flex;
     margin-left: -16px;
+    @include response(1200px) {
+      margin-bottom: 0;
+      display: block;
+      margin-left: 0;
+    }
   }
   &__form-cell {
     position: relative;
@@ -116,9 +176,17 @@
     max-width: calc(50% - 16px);
     width: 100%;
     margin-left: 16px;
+    @include response(1200px) {
+      margin-bottom: 16px;
+      max-width: 100%;
+      margin-left: 0;
+    }
     &--full {
       flex: 0 0 calc(100% - 16px);
       max-width: calc(100% - 16px);
+      @include response(1200px) {
+        max-width: 100%;
+      }
     }
   }
   &__form-label {
@@ -128,6 +196,10 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    @include response(1200px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
     span {
       color: $yellow;
     }

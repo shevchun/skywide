@@ -9,7 +9,12 @@
   color: #626262;
   font-size: 16px;
   font-weight: 400;
+  border-radius: 0;
   transition: 0.3s ease-in-out;
+  @include response(1200px) {
+    height: 46px;
+    font-size: 14px;
+  }
   &::placeholder {
     color: #cfcfcf;
   }
@@ -30,7 +35,11 @@
   color: #626262;
   font-size: 16px;
   font-weight: 400;
+  border-radius: 0;
   transition: 0.3s ease-in-out;
+  @include response(1200px) {
+    height: 88px;
+  }
   &::placeholder {
     color: #cfcfcf;
   }
