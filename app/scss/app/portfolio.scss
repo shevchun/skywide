@@ -117,8 +117,9 @@
       margin-right: 12px;
     }
     @include desktop-hover() {
-      .portfolio__slider-item-title {
-        color: $yellow;
+      .portfolio__slider-item-link {
+        opacity: 1;
+        visibility: visible;
       }
     }
     img {
@@ -174,19 +175,90 @@
     flex: 0 0 32%;
     max-width: 32%;
     width: 100%;
+    text-decoration: none;
     @include response(1200px) {
       flex: 0 0 166px;
       max-width: 166px;
     }
     @include desktop-hover() {
-      .portfolio__slider-item-title {
-        color: $yellow;
+      .portfolio__slider-item-link {
+        opacity: 1;
+        visibility: visible;
       }
     }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    &--last {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include desktop-hover() {
+        .portfolio__slider-item-small-link {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__slider-item-small-title {
+    position: relative;
+    margin-bottom: 12px;
+    color: #1d1d1d;
+    font-size: 24px;
+    font-weight: 700;
+    @include response(1200px) {
+      font-size: 16px;
+    }
+  }
+  &__slider-item-small-link {
+    color: #d2b26c;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    @include response(1200px) {
+      font-size: 12px;
+    }
+    svg {
+      flex: 0 0 auto;
+      margin-left: 12px;
+    }
+  }
+  &__slider-item-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  &__slider-item-link-icon {
+    margin-bottom: 2px;
+    @include response(1200px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__slider-item-link-text {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #fff;
+    @include response(1200px) {
+      font-size: 9px;
+      font-weight: 400;
+      line-height: normal;
     }
   }
 }
