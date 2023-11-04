@@ -32,6 +32,12 @@
   }
   &__item-slider-item {
     vertical-align: top;
+    @include desktop-hover() {
+      .portfolio-page__item-nav-item-link {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
     img {
       width: 100%;
     }
@@ -87,6 +93,11 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    .portfolio-page__item-slider-item & {
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease-in-out;
+    }
   }
   &__item-nav-item-link-icon {
     margin-bottom: 2px;
