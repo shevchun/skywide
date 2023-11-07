@@ -114,6 +114,7 @@
     @include response(1200px) {
       flex: 0 0 254px;
       max-width: 254px;
+      width: 254px;
       margin-right: 12px;
     }
     @include desktop-hover() {
@@ -177,8 +178,9 @@
     width: 100%;
     text-decoration: none;
     @include response(1200px) {
-      flex: 0 0 166px;
-      max-width: 166px;
+      flex: 0 0 254px;
+      max-width: 254px;
+      width: 254px;
     }
     @include desktop-hover() {
       .portfolio__slider-item-link {
@@ -195,6 +197,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include response(1200px) {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+      }
       @include desktop-hover() {
         .portfolio__slider-item-small-link {
           text-decoration: underline;
